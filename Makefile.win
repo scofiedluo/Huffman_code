@@ -1,0 +1,51 @@
+# Project: huffman树
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = huffman树_private.res
+OBJ      = E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.o $(RES)
+LINKOBJ  = E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.o $(RES)
+LIBS     = -L"E:/Dec-c/install/Dev-Cpp/MinGW64/lib" -L"E:/Dec-c/install/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"E:/Dec-c/install/Dev-Cpp/MinGW64/include" -I"E:/Dec-c/install/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dec-c/install/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/Dec-c/install/Dev-Cpp/MinGW64/include" -I"E:/Dec-c/install/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Dec-c/install/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Dec-c/install/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = huffman树.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/code_output.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/f_count.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/file_in_out.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/huffman.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/Link_List.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/main.o $(CFLAGS)
+
+E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.o: E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.c
+	$(CC) -c E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.c -o E:/Data_structure/信息66班第三组_数据结构实验/co_project/co_project/merge_sort.o $(CFLAGS)
+
+huffman树_private.res: huffman树_private.rc 
+	$(WINDRES) -i huffman树_private.rc --input-format=rc -o huffman树_private.res -O coff 
+
